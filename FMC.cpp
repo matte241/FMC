@@ -537,9 +537,9 @@ if (runwaylength < 9843 || elevation >= 5000) {
 
 if (TOW > 300000 && TOW < 397000) {
   flaps = degree[0];
-} else if (TOW >= 397000 && TOW < 529000) {
+} else if (TOW < 529000) {
     flaps = degree[1];      
-} else if (TOW >= 529000 && TOW < 657000) {    
+} else if (TOW < 657000) {    
     flaps = degree[2];
   }
 std::cout << "Flap Setting: " << flaps << "\n";
